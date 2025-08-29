@@ -5,10 +5,6 @@ const MobileLocation = () => {
     const [countryName, setCountryName] = useState([]);
     const [countrySelected, setCountrySelected] = useState('');
     const [location, setLocation] = useState(null);
-
-    // const API_KEY = '624aa73049ceb580036f47ec0f47623a';
-
-
     const countryNames = async () => {
         try {
             const res = await fetch('https://countriesnow.space/api/v0.1/countries/positions');
