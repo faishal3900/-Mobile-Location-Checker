@@ -6,7 +6,8 @@ const MobileLocation = () => {
     const [countrySelected, setCountrySelected] = useState('');
     const [location, setLocation] = useState(null);
 
-    const API_KEY = '624aa73049ceb580036f47ec0f47623a';
+    // const API_KEY = '624aa73049ceb580036f47ec0f47623a';
+
 
     const countryNames = async () => {
         try {
@@ -25,6 +26,9 @@ const MobileLocation = () => {
     const countrySelect = (e) => {
         setCountrySelected(e.target.value);
     };
+
+    const API_KEY = import.meta.env.VITE_NUMVERIFY_API_KEY;
+    console.log(API_KEY);
 
     const submitLocation = async (e) => {
         e.preventDefault();
