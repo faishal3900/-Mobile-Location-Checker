@@ -28,7 +28,6 @@ const MobileLocation = () => {
     };
 
     const API_KEY = import.meta.env.VITE_NUMVERIFY_API_KEY;
-    console.log(API_KEY);
 
     const submitLocation = async (e) => {
         e.preventDefault();
